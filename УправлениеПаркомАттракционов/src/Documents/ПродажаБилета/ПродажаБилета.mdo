@@ -33,6 +33,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <registerRecords>AccumulationRegister.ПосещенияАттракционов</registerRecords>
+  <registerRecords>AccumulationRegister.ПродажиБилетов</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="516ff23a-7cdc-491f-9e1c-4944a9f2e027">

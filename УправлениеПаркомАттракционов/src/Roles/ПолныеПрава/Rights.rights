@@ -11,6 +11,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Configuration.УправлениеПаркомАттракционов</name>
+		<right>
+			<name>Automation</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Аттракционы</name>
 		<right>
 			<name>InteractiveDelete</name>

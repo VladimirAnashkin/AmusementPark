@@ -51,4 +51,5 @@
   <documents>Document.ПродажаБилета</documents>
   <reports>Report.ПосещениеАттракционов</reports>
   <accumulationRegisters>AccumulationRegister.ПосещенияАттракционов</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ПродажиБилетов</accumulationRegisters>
 </mdclass:Configuration>
