@@ -17,7 +17,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>Kondrp</vendor>
-  <version>1.0.0.1</version>
+  <version>1.0.0.2</version>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -45,6 +45,7 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <roles>Role.Кассир</roles>
   <roles>Role.ПолныеПрава</roles>
   <commonModules>CommonModule.НомераТелефоновКлиентСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияКлиентСервер</commonModules>
@@ -59,6 +60,8 @@
   <documents>Document.ШкалаБонуснойПрограммы</documents>
   <enums>Enum.ВидНоменклатуры</enums>
   <reports>Report.ПосещениеАттракционов</reports>
+  <dataProcessors>DataProcessor.ПереходНаНовыеВерсии</dataProcessors>
+  <dataProcessors>DataProcessor.РабочееМестоКассира</dataProcessors>
   <informationRegisters>InformationRegister.АктуальнаяШкалаБонуснойПрограммы</informationRegisters>
   <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
   <accumulationRegisters>AccumulationRegister.БонусныеБаллыКлиентов</accumulationRegisters>
