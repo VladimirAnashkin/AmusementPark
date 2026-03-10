@@ -516,19 +516,30 @@
           </dataPath>
           <titleLocation>None</titleLocation>
           <items xsi:type="form:FormField">
-            <name>СписокНоменклатурыНоменклатура</name>
-            <id>111</id>
+            <name>СписокНоменклатурыСсылка</name>
+            <id>147</id>
+            <title>
+              <key>ru</key>
+              <value>Номенклатура</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
-              <common>true</common>
+              <for>
+                <value>true</value>
+                <role>Role.Кассир</role>
+              </for>
+              <for>
+                <value>true</value>
+                <role>Role.ПолныеПрава</role>
+              </for>
             </userVisible>
             <dataPath xsi:type="form:DataPath">
-              <segments>СписокНоменклатуры.Номенклатура</segments>
+              <segments>СписокНоменклатуры.Ссылка</segments>
             </dataPath>
             <extendedTooltip>
-              <name>СписокНоменклатурыНоменклатураРасширеннаяПодсказка</name>
-              <id>113</id>
+              <name>СписокНоменклатурыСсылкаРасширеннаяПодсказка</name>
+              <id>149</id>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -537,8 +548,8 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>СписокНоменклатурыНоменклатураКонтекстноеМеню</name>
-              <id>112</id>
+              <name>СписокНоменклатурыСсылкаКонтекстноеМеню</name>
+              <id>148</id>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>LabelField</type>
@@ -1242,9 +1253,12 @@
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>СписокНоменклатуры.ЭтоГруппа</segments>
     </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокНоменклатуры.Ссылка</segments>
+    </notDefaultUseAlwaysAttributes>
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ
-	спрНоменклатура.Ссылка КАК Номенклатура,
+	спрНоменклатура.Ссылка КАК Ссылка,
 	спрНоменклатура.ЭтоГруппа КАК ЭтоГруппа,
 	спрНоменклатура.КоличествоПосещений КАК КоличествоПосещений,
 	ЦеныНоменклатурыСрезПоследних.Цена КАК Цена
@@ -1272,6 +1286,42 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Цена</dataPath>
         <field>Цена</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Ссылка</dataPath>
+        <field>Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Код</dataPath>
+        <field>Код</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидНоменклатуры</dataPath>
+        <field>ВидНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидАттракциона</dataPath>
+        <field>ВидАттракциона</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Предопределенный</dataPath>
+        <field>Предопределенный</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИмяПредопределенныхДанных</dataPath>
+        <field>ИмяПредопределенныхДанных</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПометкаУдаления</dataPath>
+        <field>ПометкаУдаления</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Родитель</dataPath>
+        <field>Родитель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Наименование</dataPath>
+        <field>Наименование</field>
       </fields>
       <parameters>
         <name>Период</name>
